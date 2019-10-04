@@ -1,8 +1,20 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: azure;
 }
 
 a {
   color: #00B7FF;
+}
+.nav-item {
+  padding: 0px;
+  font-size: 12px;
+  color: purple;
+  background-color: #00B7FF;
+  margin: 2px;
+}
+.nav {
+  margin-bottom: 5%;
+  
 }
