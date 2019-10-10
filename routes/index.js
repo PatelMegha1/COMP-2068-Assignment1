@@ -5,5 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Megha Patel' });
 });
+router.get('/', function(req, res, next) {
+  res.render('/home.js');
+});
 
 module.exports = router;
