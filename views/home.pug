@@ -9,9 +9,9 @@ html
     body
         div(style={'background-color':'black', 'color':'white', 'padding-bottom':'310px'})
             img(src="./images/me.jpg")
-            h2(style={'text-align':'center', 'margin-top':'-430px', 'margin-left':'530px'})= title 
+            h1(style={'text-align':'center', 'margin-top':'-430px', 'margin-left':'530px'})= title 
             p(style={'text-align':'center', 'margin-left':'530px'}) Web Developer
-        h1 I'm Designer !!
+        h1(style={'margin':'3%'}) I'm Designer !!
         div.row
             div.column(style='background-color:#aaa;')
                 h3 Where i've been 
@@ -22,7 +22,7 @@ html
             div.column(style='background-color:#ccc;')
                 h3 What I hope to do
                 p Some text..
-        h2(style={'text-align':'center'}) MY SKILLS
+        h2(style={'text-align':'center', 'margin':'3%'}) MY SKILLS
         //HTML
         .fullstacks
             .container
@@ -102,6 +102,23 @@ html
                     .progress-content
                         .progress__value 84
                         .progress__text Database
-    
-              
+
+        h2(style={'text-align':'center', 'margin':'3%'}) My Projects
+        //- .col-lg-3.col-md-4.col-sm-6.col-xs-12
+        .hovereffect
+            img.img-responsive(src='/images/job1.jpg', alt='', style={'width':'25vw'})
+            .overlay
+                 h2 JOB FAIR
+                 a.info(href='#') link here    
         
+        .hovereffect
+            img.img-responsive(src='/images/job2.jpg', alt='')
+            .overlay
+                 h2 Interfaith Dialogue
+                 a.info(href='#') link here 
+
+        .hovereffect
+            img.img-responsive(src='/images/job3.png', alt='')
+            .overlay
+                 h2 Everything's Store
+                 a.info(href='#') link here
