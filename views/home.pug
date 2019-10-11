@@ -3,14 +3,15 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
         link(href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap', rel='stylesheet')
         script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-        
+        script(src='https://kit.fontawesome.com/a076d05399.js')
+        script(src='./routes/home.js')
 
 
     body
         div(style={'background-color':'black', 'color':'white', 'padding-bottom':'310px'})
             img(src="./images/me.jpg")
             h1(style={'text-align':'center', 'margin-top':'-430px', 'margin-left':'530px'})= title 
-            p(style={'text-align':'center', 'margin-left':'530px'}) Web Developer
+            p#typing.typing(style={'text-align':'center', 'margin-left':'530px'}) web developer
         h1(style={'margin':'3%'}) I'm Designer !!
         div.row
             div.column(style='background-color:#aaa;')
@@ -105,20 +106,71 @@ html
 
         h2(style={'text-align':'center', 'margin':'3%'}) My Projects
         //- .col-lg-3.col-md-4.col-sm-6.col-xs-12
-        .hovereffect
-            img.img-responsive(src='/images/job1.jpg', alt='', style={'width':'25vw'})
-            .overlay
-                 h2 JOB FAIR
-                 a.info(href='#') link here    
-        
-        .hovereffect
-            img.img-responsive(src='/images/job2.jpg', alt='')
-            .overlay
-                 h2 Interfaith Dialogue
-                 a.info(href='#') link here 
+        .boxs
+            .hovereffect
+                img.img-responsive(src='/images/job1.jpg', alt='', style={'width':'23vw'})
+                .overlay
+                    h2 JOB FAIR
+                    a.info(href='#') link here    
+            
+            .hovereffect
+                img.img-responsive(src='/images/job2.jpg', alt='', style={'width':'22vw'})
+                .overlay
+                    h2 Interfaith Dialogue
+                    a.info(href='#') link here 
 
-        .hovereffect
-            img.img-responsive(src='/images/job3.png', alt='')
-            .overlay
-                 h2 Everything's Store
-                 a.info(href='#') link here
+            .hovereffect
+                img.img-responsive(src='/images/job3.png', alt='', style={'width':'23vw'})
+                .overlay
+                    h2 Everything's Store
+                    a.info(href='#') link here
+
+            .hovereffect
+                img.img-responsive(src='/images/job4.jpg', alt='', style={'width':'23vw'})
+                .overlay
+                    h2 Shopping Application
+                    a.info(href='#') link here
+
+        h2(style={'text-align':'center', 'margin':'5%'}) Services
+        .services
+            .service1
+                h3(style={'text-align':'center', 'font-size':'40px'}) Graphic Designing  
+                img(src='/images/graphicdesign.gif', style={'width':'16vw','margin':'2vw'})
+                h4 Creating creative graphics by abode suits
+            
+            
+            .service2
+                h3(style={'text-align':'center', 'font-size':'40px'}) Responsive websites 
+                img(src='/images/responsive.gif', style={'width':'17vw', 'height':'12vw','margin':'2vw'})
+                h4 Responsive website which adapt by any device
+
+            
+            .service3
+                h3(style={'text-align':'center', 'font-size':'40px'}) Interactive Websites 
+                img(src='/images/interactive.gif', style={'width':'17vw','margin':'2vw'})
+                h4(style={'font-size':'28px'}) Enhancing user satisfaction by improving the usability & accessibility 
+
+        h2(style={'text-align':'center', 'margin':'3%'}) Contact
+
+        section(style={'background-color':'rgba(0,0,0,0.8)','padding':'5vw'}).section.pb-5
+            .row
+                .col-lg-7(style={'margin-left':'auto','margin-right':'auto'})
+                    // Google map
+                    #map-container-google-11.z-depth-1-half.map-container-6(style={'height': '200px'})
+                        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.1422238228006!2d-79.46367878421995!3d43.769906452893615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2dfad1196095%3A0x7e0fe0520d8219e0!2s711%20Finch%20Ave%20W%2C%20Toronto%2C%20ON%20M3H%204X6!5e0!3m2!1sen!2sca!4v1570813912387!5m2!1sen!2sca', width='600', height='450', frameborder='0', style='border:0;', allowfullscreen='')
+                    br
+                    // Buttons
+                    .row.text-center(style={'color':'white'})
+                        .col-md-4
+                            a.btn-floating.blue.accent-1
+                                i(style={'font-size':'30px', 'color':'red'}).fas.fa-map-marker-alt
+                            p 711 Finch Ave West, M3H4X6
+                            p Canada
+                        .col-md-4
+                            a.btn-floating.blue.accent-1
+                                i(style={'font-size':'30px', 'color':'orange'}).fas.fa-phone
+                            p + 01 (647)687-8190
+                        .col-md-4
+                            a.btn-floating.blue.accent-1
+                                i(style={'font-size':'30px','color':'skyblue'}).fas.fa-envelope
+                            p meghapatel1903@gmail.com

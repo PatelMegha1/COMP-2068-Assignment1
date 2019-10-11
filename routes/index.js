@@ -5,8 +5,11 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Megha Patel' });
 });
-router.get('/', function(req, res, next) {
-  res.render('/home.js');
+router.get('/home', function(req, res, next) {
+  res.render('home', {title: 'Megha Patel'});
+});
+router.get('./partials/nav', function(req, res, next) {
+  res.render('nav', {title: 'Megha Patel'});
 });
 
 module.exports = router;

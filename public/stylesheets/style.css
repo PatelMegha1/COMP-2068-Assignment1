@@ -24,6 +24,33 @@ p{
 .nav-link {
   font-size: 1.5vw;;
 }
+
+.typing {
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  color: #FFF;
+  min-width: 1px;
+  min-height: 24px;
+}
+.typing:after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: -2px;
+  width: 1px;
+  height: 90%;
+  border-right: 2px solid #FFF;
+  animation: blink .5s infinite ease;
+}
+@keyframes blink{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1%;
+  }
+}
 /* Create three equal columns that floats next to each other */
 .column {
   float: center;
@@ -240,10 +267,15 @@ p{
 .project:hover{
   filter: grayscale(100%);
 } */
+.boxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .hovereffect {
-  width: 24vw;
-  height: auto;
-  float: left;
+  width: 100%;
+  align-items: center;
   position: relative;
   text-align: center;
   cursor: default;
@@ -251,7 +283,7 @@ p{
 }
 
 .hovereffect .overlay {
-  width: 26vw;
+  width: 23vw;
   height: 17.5vw;
   position: absolute;
   top: 0;
@@ -259,6 +291,7 @@ p{
   background-color: rgba(75,75,75,0.7);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+
 }
 
 .hovereffect:hover .overlay {
@@ -325,3 +358,44 @@ p{
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.service1 {
+  align-items: center;
+  width: 20vw;
+  margin: 4vw;
+  margin-top: 0;
+}
+.service2 {
+    align-items: center;
+    width: 20vw;
+    margin: 4vw;
+    margin-top: 0;
+}
+.service3 {
+  align-items: center;
+  width: 20vw;
+  margin: 4vw;
+  margin-top: 0;
+}
+h4 {
+  text-align: center;
+  font-size: 30px;
+}
+.map-container-6{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container-6 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
