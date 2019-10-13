@@ -1,0 +1,36 @@
+html
+    head
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap', rel='stylesheet')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src='https://kit.fontawesome.com/a076d05399.js')
+        script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11')
+        
+
+    body
+        include ./partials/nav
+        h2#contact(style={'text-align':'center', 'margin':'3%'}) Contact
+
+        section(style={'background-color':'rgba(0,0,0,0.8)','padding':'5vw'}).section.pb-5
+            .row
+                .col-lg-7(style={'margin-left':'auto','margin-right':'auto'})
+                    // Google map
+                    #map-container-google-11.z-depth-1-half.map-container-6(style={'height': '200px'})
+                        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.1422238228006!2d-79.46367878421995!3d43.769906452893615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2dfad1196095%3A0x7e0fe0520d8219e0!2s711%20Finch%20Ave%20W%2C%20Toronto%2C%20ON%20M3H%204X6!5e0!3m2!1sen!2sca!4v1570813912387!5m2!1sen!2sca', width='600', height='450', frameborder='0', style='border:0;', allowfullscreen='')
+                    br
+                    // Buttons
+                    .row.text-center(style={'color':'white'})
+                        .col-md-4
+                            a.btn-floating.blue.accent-1
+                                i(style={'font-size':'30px', 'color':'red'}).fas.fa-map-marker-alt
+                            p 711 Finch Ave West, M3H4X6
+                            p Canada
+                        .col-md-4
+                            a.btn-floating.blue.accent-1
+                                i(style={'font-size':'30px', 'color':'orange'}).fas.fa-phone
+                            p + 01 (647)687-8190
+                        .col-md-4
+                            a.btn-floating.blue.accent-1
+                                i(style={'font-size':'30px','color':'skyblue'}).fas.fa-envelope
+                            p meghapatel1903@gmail.com

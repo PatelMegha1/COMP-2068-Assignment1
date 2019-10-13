@@ -1,0 +1,36 @@
+html
+    head
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC&display=swap', rel='stylesheet')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src='https://kit.fontawesome.com/a076d05399.js')
+        script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11')
+        
+    body
+        include ./partials/nav
+        h2#projects(style={'text-align':'center', 'margin':'3%'}) My Projects
+            //- .col-lg-3.col-md-4.col-sm-6.col-xs-12
+            .boxs
+                .hovereffect
+                    img.img-responsive(src='/images/job1.jpg', alt='', style={'width':'23vw'})
+                    .overlay
+                        h2 JOB FAIR
+                        a.info Event organized by "GIDSS-non profit oragaization". Creating website for registration and Marketing on social media, flyes, banner.    
+                
+                .hovereffect
+                    img.img-responsive(src='/images/job2.jpg', alt='', style={'width':'22vw'})
+                    .overlay
+                        h2 Interfaith Dialogue
+                        a.info Be the part of this event is the one of biggest experiences in my life. Building websites, Creating graphics for this event, inviting companies, oraganize the whole place is most amazing experience of my life. 
+                .hovereffect
+                    img.img-responsive(src='/images/job3.png', alt='', style={'width':'23vw'})
+                    .overlay
+                        h2 Everything's Store
+                        a.info Created website by ASP.net and bootstrap. It was group project. 
+
+                .hovereffect
+                    img.img-responsive(src='/images/job4.jpg', alt='', style={'width':'23vw'})
+                    .overlay
+                        h2 Shopping Application
+                        a.info Beautiful Shopping application for IOS by Swift language. Added databse for user login.
